@@ -4,6 +4,13 @@ This program uses xdp to simply process gtpu packet.
 ## Dependencies
 [libbpf](https://github.com/libbpf/libbpf)
 <br>[goebpf](https://github.com/dropbox/goebpf)
+
+### Installation
+```bash
+sudo apt install libbpfcc-dev
+go get github.com/dropbox/goebpf
+```
+
 ## Component
 ![Component](./docs/Component.png)
 ## Usage
