@@ -18,7 +18,7 @@ build_bpf:$(XDP_BINARY)
 build_go: $(GO_BINARY)
 
 $(XDP_BINARY): $(XDP_SOURCE)
-	@mkdir build
+	@mkdir -p build
 	$(CLANG) $(CLANG_INCLUDE) -O2 -target bpf -c $^  -o $@
 
 $(GO_BINARY): $(GO_SOURCE)
